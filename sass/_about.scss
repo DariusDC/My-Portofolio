@@ -1,0 +1,51 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.collage-bg {
+  margin-top: 2rem;
+  z-index: 2;
+  background: url(/img/collage.jfif);
+  width: 100vw;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transform: translateY(-8rem);
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#026b5d, 0.8);
+    z-index: 0;
+    transform: translateY(0);
+  }
+
+  .about-title {
+    z-index: 3;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .about-description {
+    color: #fff;
+    z-index: 4;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    padding: 0 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+}

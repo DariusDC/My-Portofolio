@@ -1,0 +1,91 @@
+#footer {
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+
+  .copyright {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    .colored {
+      color: $primary-color;
+    }
+  }
+  @include easeOut();
+
+  .link-btn {
+    background: darken(#252525, 5);
+    border-radius: 5px;
+    padding: 0.6rem 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: grey;
+    @include easeOut();
+
+    i {
+      margin-right: 1rem;
+      &.insta {
+        color: #ce2d94;
+      }
+      &.git {
+        color: #24292e;
+      }
+    }
+
+    &.instagram:hover {
+      background: #ce2d94;
+      color: #fff;
+      @include easeOut();
+      i {
+        color: #fff;
+      }
+    }
+
+    &.github:hover {
+      background: #24292e;
+      color: #fff;
+      @include easeOut();
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .icons {
+    width: 30%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: grey;
+      @include easeOut();
+      i.fa-facebook:hover {
+        @include easeOut();
+        color: #0a7fec;
+      }
+      i.fa-instagram:hover {
+        @include easeOut();
+        color: #ce2d94;
+      }
+      i.fa-github:hover {
+        @include easeOut();
+        color: #fff;
+      }
+      i.fa-linkedin:hover {
+        @include easeOut();
+        color: #0077b5;
+      }
+    }
+  }
+}

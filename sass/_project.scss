@@ -1,0 +1,72 @@
+#work {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  transform: translateY(-8rem);
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 7px -10px rgba(gray, 0.5);
+
+    hr {
+      background-color: #c5c5c5;
+      width: 10%;
+      height: 1px;
+      margin: 20px 0;
+      border: none;
+    }
+
+    img {
+      margin: 0.9rem auto;
+      width: 80%;
+      object-fit: contain;
+    }
+
+    font-family: sans-serif;
+    .project-title {
+      font-size: 1.7rem;
+      padding-bottom: 15px;
+      color: rgba(#000000, 0.8);
+    }
+
+    .project-short {
+      font-size: 0.9rem;
+      color: grey;
+    }
+    font-family: "Noto Serif TC", serif;
+
+    .project-description {
+      width: 60%;
+      max-width: 1600px;
+      padding: 10px 0 50px 0;
+      font-size: 1.1rem;
+      color: grey;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      font-family: "Noto Serif TC", serif;
+    }
+
+    .btn {
+      @include easeOut();
+      color: $primary-color;
+      background: #fff;
+      border: 2px solid $primary-color;
+      text-decoration: none;
+      font-family: sans-serif;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+}
