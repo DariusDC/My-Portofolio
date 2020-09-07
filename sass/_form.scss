@@ -105,6 +105,16 @@
         transform: translateY(0);
       }
 
+      small {
+        display: block;
+        padding: 1rem 0;
+        font-size: 0.7rem;
+        color: silver;
+        span {
+          color: #fff;
+        }
+      }
+
       .form-title {
         font-size: 1.7rem;
         margin-bottom: 3rem;

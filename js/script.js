@@ -59,7 +59,7 @@ function getPosition(el) {
 }
 
 window.addEventListener("scroll", () => {
-  if (getPosition(header).y < -50) {
+  if (getPosition(header).y < -300) {
     navbar.classList.add("white");
     lines.forEach((line) => line.classList.add("white"));
   } else {

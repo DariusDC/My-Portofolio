@@ -1,5 +1,9 @@
 #footer {
-  padding-bottom: 8rem;
+  // padding-bottom: 8rem;
+  position: relative;
+  bottom: 8rem;
+  padding-top: 5rem;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -7,6 +11,9 @@
   color: grey;
 
   .copyright {
+    width: 80%;
+    text-align: center;
+    line-height: 2;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.8rem;
@@ -38,6 +45,18 @@
       &.git {
         color: #24292e;
       }
+      &.mail {
+        color: darken(#ffcd0c, 10);
+      }
+    }
+
+    &.email:hover {
+      color: #fff;
+      @include easeOut();
+      background: darken(#ffcd0c, 20);
+      i {
+        color: #fff;
+      }
     }
 
     &.instagram:hover {
@@ -61,7 +80,7 @@
 
   .icons {
     width: 30%;
-    max-width: 300px;
+    min-width: 300px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;

@@ -63,46 +63,83 @@
 
     <section id="work">
       <div class="project one">
-        <img src="img/project-image-text.jpg" alt="Project image" />
+        <img src="img/Covid.png" alt="Project image" />
         <hr />
-        <h3 class="project-title">Table Reservation</h3>
-        <h6 class="project-short">Interface Design / UI</h6>
+        <h3 class="project-title">Coronavirus Live Tracker</h3>
+        <h6 class="project-short">React UI interface</h6>
         <hr />
         <p class="project-description">
-          As an exploration in product design and architecture I have been
-          working on an idea for a restaurant reservation system. Thoroughly
-          challenging thinking through the product design but ultimately
-          rewarding.
+          Out of the desire to stop searching on google for all the information
+          I need related to the pandemic, I created Covid 19 Tracker, an
+          application where we can see the current state of the virus, the
+          number of cases, recovered and deaths in each country, but also
+          statistics displayed on graphs or on an interactive map
         </p>
-        <a href="#" class="btn">Live Demo</a>
+        <a
+          href=https://covid-19-tracker-82424.web.app/
+          target="_blank"
+          class="btn"
+          >Live Demo</a
+        >
+      </div>
+      <div class="project one">
+        <img src="img/travel.png" alt="Project image" />
+        <hr />
+        <h3 class="project-title">Travel Journal</h3>
+        <h6 class="project-short">Full stack MERN app</h6>
+        <hr />
+        <p class="project-description">
+          A jorunal application, implemented based on a map, in which I mark the
+          places I have visited, adding pictures and giving some rating for each
+          one. The interface is pretty simple and easy to use.
+        </p>
+        <a
+          href="https://travel-journal-8822d.web.app/"
+          target="_blank"
+          class="btn"
+          >Live Demo</a
+        >
       </div>
       <div class="project two">
-        <img src="img/project-image-text.jpg" alt="Project image" />
+        <img src="img/laparik.png" alt="Project image" />
         <hr />
-        <h3 class="project-title">Table Reservation</h3>
-        <h6 class="project-short">Interface Design / UI</h6>
+        <h3 class="project-title">La Parik Pizza</h3>
+        <h6 class="project-short">Front-End Design / UI</h6>
         <hr />
         <p class="project-description">
-          As an exploration in product design and architecture I have been
-          working on an idea for a restaurant reservation system. Thoroughly
-          challenging thinking through the product design but ultimately
-          rewarding.
+          Trying to offer a pleasant experience to each customer of the
+          restaurant "La Parik", I created an interface as easy to use and
+          interactive for every pizza lover.
         </p>
-        <a href="#" class="btn">Live Demo</a>
+        <a href="#!" class="btn disabled">Soon</a>
+      </div>
+      <div class="project two">
+        <img src="img/Doggify.png" alt="Project image" />
+        <hr />
+        <h3 class="project-title">Doggify</h3>
+        <h6 class="project-short">Social media app</h6>
+        <hr />
+        <p class="project-description">
+          As a true dog lover, I started working on my new application, namely, Doggify, the application in which every dog ​​lover from all over the world he can socialize with others, being able to post images, appreciate other pictures and add comments.
+For now, however, only the UI part is finished.
+        </p>
+        <a href="#!" class="btn disabled">Soon</a>
       </div>
       <div class="project three">
-        <img src="img/project-image-text.jpg" alt="Project image" />
+        <img src="img/Gallery.png" alt="Project image" />
         <hr />
-        <h3 class="project-title">Table Reservation</h3>
-        <h6 class="project-short">Interface Design / UI</h6>
+        <h3 class="project-title">My Gallery</h3>
+        <h6 class="project-short">Personal Gallery React App</h6>
         <hr />
         <p class="project-description">
-          As an exploration in product design and architecture I have been
-          working on an idea for a restaurant reservation system. Thoroughly
-          challenging thinking through the product design but ultimately
-          rewarding.
+          We all like to have a place to keep our most important pictures.
+          That's why I implemented "My Gallery", the application where you can
+          store your own photos for free and add the best ones to your
+          favorites, which only you can see later
         </p>
-        <a href="#" class="btn">Live Demo</a>
+        <a href="https://gallery-4a351.web.app/" target="_blank" class="btn"
+          >Live Demo</a
+        >
       </div>
     </section>
 
@@ -161,26 +198,31 @@
           <div class="close-form">
             <i class="fas fa-times fa-2x"></i>
           </div>
-          <form action="/" autocomplete="off">
+          <form action="/" autocomplete="off" id="form">
             <h3 class="form-title">Let's talk.</h3>
             <div class="input-group">
               <label for="name">Name *</label>
-              <input autocomplete="off" type="text" class="form-input" />
+              <input autocomplete="off" type="text" id="form-name" class="form-input" />
             </div>
             <div class="input-group">
               <label for="email">Email *</label>
-              <input autocomplete="off" type="email" class="form-input" />
+              <input autocomplete="off" type="email" id="form-email" class="form-input" />
             </div>
             <div class="input-group">
               <label for="message">Message *</label>
               <textarea
+              id="form-message"
                 autocomplete="off"
                 name="message"
                 cols="30"
                 rows="10"
               ></textarea>
             </div>
-            <button class="form-btn">Send Message</button>
+            <button class="form-btn" type="submit">Send Message</button>
+            <small
+              >Or, send me a mail on
+              <span class="colored">dariuscapolna@yahoo.com</span></small
+            >
           </form>
         </div>
       </div>
@@ -191,27 +233,53 @@
         &copy; <span id="year"></span>
         <span class="colored">darius capolna</span>. full-stack web developer
       </p>
-      <a href="#!" class="link-btn instagram"
+      <a target="_blank" href="https://www.instagram.com/darius184/" class="link-btn instagram"
         ><i class="fab fa-2x fa-instagram insta"></i> follow me on instagram</a
       >
-      <a href="#!" class="link-btn github"
+      <a target="_blank" href="https://github.com/DariusDC" class="link-btn github"
         ><i class="fab fa-2x fa-github git"></i> follow me on github</a
       >
+      <a style="text-transform: inherit" target="_blank" href="#!" class="link-btn email"
+        ><i class="fas fa-2x fa-envelope mail"></i>dariuscapolna@yahoo.com</a
+      >
       <div class="icons">
-        <a href="#!">
+        <a target="_blank" href="https://www.facebook.com/darius.capolna/">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
-        <a href="#!">
+        <a target="_blank" href="https://www.instagram.com/darius184/">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="#!">
+        <a target="_blank" href="https://github.com/DariusDC">
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <a href="#!">
+        <a target="_blank" href="https://www.linkedin.com/in/darius-capolna-b95b351b4/">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
       </div>
     </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+<script>
+  document.getElementById("form").addEventListener("submit", (e) =>{
+      e.preventDefault();
+      const email = document.getElementById("form-email").value;
+      const name = document.getElementById("form-name").value;
+      const message = document.getElementById("form-message").value;
+      sendEmail(email, name, message)
+  })
+function sendEmail(email, name, message) {
+	Email.send({
+    SecureToken : "621ea64b-da88-48e1-bc0a-08996130cc91",
+    To : 'darius@capolna.com',
+    From : email,
+    Subject : name,
+    Body : message
+    }).then(
+        message => alert("mail sent successfully")
+    );
+}
+</script>
+<!-- SecureToken: "621ea64b-da88-48e1-bc0a-08996130cc91",  -->
 
     <script src="js/script.js"></script>
     <script>

@@ -1,12 +1,12 @@
 @media (max-width: 575.98px) {
-  h1 {
-    margin-top: 160px;
-  }
 }
 
 // Small devices (landscape phones, less than 768px)4
 
 @media (max-width: 767.98px) {
+  #portofolio {
+    height: 50vh;
+  }
   .nav {
     display: inline-block;
   }
@@ -21,7 +21,7 @@
   }
 
   .center {
-    flex-direction: column;
+    // flex-direction: column;
     height: 100vh;
     // transform: translateY(8rem);
     width: 100vw;
@@ -29,6 +29,10 @@
     min-height: 100vh;
     min-width: 100vw;
     margin: 1rem;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
     &::-webkit-scrollbar {
       display: none;
     }

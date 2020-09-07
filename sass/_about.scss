@@ -14,7 +14,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  transform: translateY(-8rem);
+  // transform: translateY(-8rem);
+  position: relative;
+  bottom: 8rem;
   flex-direction: column;
   text-align: center;
   margin: 0;
