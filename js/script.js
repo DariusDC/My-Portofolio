@@ -14,6 +14,7 @@ const closeForm = document.querySelector(".close-form");
 const aboutForm = document.querySelector(".about-form");
 const messageForm = document.querySelector(".message-form");
 const contactBtn2 = document.querySelector(".contact-btn");
+const contactBtn3 = document.querySelector(".contact-btn-2");
 
 let toggle = false;
 
@@ -85,10 +86,11 @@ contactBtn.addEventListener("click", () => {
 });
 
 contactBtn2.addEventListener("click", () => {
-  contactForm.classList.add("show");
-  aboutForm.classList.add("show");
-  messageForm.classList.add("show");
-  menuBtn.classList.add("no-display");
+  window.open("mailto:dariuscapolna@yahoo.com");
+});
+
+contactBtn3.addEventListener("click", () => {
+  window.open("mailto:dariuscapolna@yahoo.com");
 });
 
 closeForm.addEventListener("click", () => {
